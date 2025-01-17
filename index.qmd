@@ -93,7 +93,7 @@ Following exposure to a potential stressor a plant “may” or “may not” be
 
 The success of anticipatory action towards future recurring conditions that are subject to “random” variation in occurrence and intensity cannot be evaluated deterministically. Replication in time and space is needed so that response is assessed over a multidimensional “space” that encompasses the range of environmental variation of interest. This is why extensive field trial networks are used at late steps of crop breeding. As communication among individuals and maternal effects play a role, they also need to be taken into account, e.g., using field plots instead of individual plants in pots.
 
-### Levels of organization and complexity
+### Levels of organization and interactions
 
 Levels of organization and hierarchical organization of systems are central to contemporary biological thinking [@Wimsatt1976; @Wimsatt1994; @Capra2014; @Sadras2016; Sadras and Richards 2016, @Aphalo2022; Aphalo and Sadras, 2022, @Kauffman2023; Kauffman and Roli 2023, @Thorogood2023].  Compositional levels of organization are defined as hierarchical divisions of biological entities ‘organized by part-whole relations in which wholes at one level function as parts at the next (and all higher) levels’ [@Wimsatt1994]. In the words of @Kauffman2023 “…living things are Kantian wholes where the parts exist in the universe for and by means of the whole.” Because individuals, as Kantian wholes, propagate their offspring, their sustaining parts - lungs and kidneys in mammals – “are also propagated and evolve to function better” [@Kauffman2023]. Levels ‘are constituted by families of entities usually of comparable size and dynamical properties, which characteristically interact primarily with one another’ [@Wimsatt1994]. Notwithstanding cross-level interactions, [@Wimsatt1994] view highlights that molecules interact mostly with molecules [@Rietman2011] and plants with plants [@Harper1977]; this partially accounts for the compartmentalized theories associated with each level. Indeed, processes can be separated into discrete classes by their time constants [@Levins1970]. A physiological perspective challenging the cause-and-effect arrow from genotype to phenotype led to the conclusion that there is no privileged level of organisation and highlighted the importance of downward causation in the construction of the phenotype whereby higher-level properties “necessarily also causes of lower level behaviour, involving actions and interactions both ways” [@Noble2012]. Below we apply these ideas in an attempt to illuminate the concepts of stress, stressor and strain.
 
@@ -198,18 +198,40 @@ Recovery involves repair of damage, but in some cases also compensatory response
 
 Exhaustion hapens if both acclimation and repair are overwhelmed or innefective. A plant dies, leaves no descendence, or yields no commercially valuable produce.
 
+### States instead of phases
+
+As the phases do not represent necessarily a temporal sequence, we should define them as states of the system. When doing this, it becomes clear that the alarm state is not defined based on the same criterion as the other states, and that the alarm stage can coexist with the other states. This view frees us to consider the dynamics of stress.
+
+```{mermaid}
+flowchart TD
+    a{change<br/>predicted?} -->|Yes| B(Alarm state<br/>_inadecuate strategy_)
+    A(No alarm state<br/>_adecuate strategy_) --> a
+    a -->|No| A
+    I1[[_External and internal_<br/>cues and signals]] -.-> a
+    B --> a
+    I2[[_Internal condition_<br/>metabolism]] -.-> b
+    b{Damage is...?} -->|Present and decreasing| E(Recovery state<br/>_repair > damage_)
+    b -->|Present and stable| C(Resistance state<br/>_repair = damage_)
+    b -->|Present and increasing| D(Exhaustion state<br/>_repair < damage_)
+    b -->|Not present| F(No damage state<br/>_damage = 0_ )
+    C --> b
+    D --> b
+    E --> b
+    F --> b
+```
+
 ## Plant stress as a system
 
 ### Complexity
 
-Levels of organization and hierarchical organization of systems play a central role in modern biological thinking (Capra and Luigi, 2014, Aphalo and Sadras, 2022, Thorogood et al. 2023).  Below we apply these ideas in an attempt to untangle the concepts of stress, stressor and strain.
+Levels of organization and hierarchical organization of systems play a central role in modern biological thinking [@Capra2014; @Aphalo2022; @Thorogood2023].  Below we apply these ideas in an attempt to untangle the concepts of stress, stressor and strain.
 
 ::: callout-note
 # Possible box (not necessarily here)
 
 Giving examples on the idea/fact that: For logical clarity the condition or variable being considered as a possible stressor or limiting factor and the biological system being considered must be observed at the same temporal and spatial scales. It also follows that conclusions unless explicitly and formally upscaled or downscaled using a system's perspective do not apply at levels above or below the one studied.
 
-Should we cited the Spandrels'
+Should we cite the Spandrels' paper?
 :::
 
 As discussed in previous sections, potential and actual stressors in nature are rarely individual environmental factors but instead combinations of factors acting jointly or sequentially. Information acquired by plants through the perception of cues and signals in the environment is combined during transduction. Acquired information and experienced stress drastically affects future responses to both informational cues and signals, and to potential stressors thanks to enhanced readiness to respond and physiological, morphological and developmental acclimation. Acclimation is in itself a syndrome of delicately orchestrated and coordinated concurrent responses of physiology, morphology and development. 
