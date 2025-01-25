@@ -8,8 +8,12 @@ authors:
     affiliation: South Australia Research and Development Institute
   - name: Marcel A. K. Jansen
     affiliation: University College Cork
-bibliography: references.bib
+bibliography: stress.bib
 ---
+
+```{r, echo=FALSE}
+library(ggplot2)
+```
 
 ## Introduction
 
@@ -25,7 +29,7 @@ We, a physiologist (MAKJ), an ecologist (PJA), and an agronomist (VOS), review h
 
 ## Past and current uses of the term “plant stress”
 
-The concept of stress originally used in physics to describe mechanical forces acting on inanimate objects was transferred to target domains including psychology, physiology, and medicine, and eventually to agronomy and ecology as a metaphor describing various factors and “pressures” acting on whole organisms, on their component parts or on assemblages of organisms. @Seyle1936 when introducing “stress” to biology, described the development of stress as a process with three phases: “alarm”, “resistance” and “‘exhaustion”, with normal function compromised only in the last of these phases. Seyle also introduced the concepts of “eustress” and “distress”. Thus, according to Seyle stress events constrained to the first phases could lead to ulterior positive effects, or “eustress”.
+The concept of stress originally used in physics to describe mechanical forces acting on inanimate objects was transferred to target domains including psychology, physiology, and medicine, and eventually to agronomy and ecology as a metaphor describing various factors and “pressures” acting on whole organisms, on their component parts or on assemblages of organisms. @Selye1936 when introducing “stress” to biology, described the development of stress as a process with three phases: “alarm”, “resistance” and “‘exhaustion”, with normal function compromised only in the last of these phases. Selye also introduced the concepts of “eustress” and “distress”. Thus, according to Selye stress events constrained to the first phases could lead to ulterior positive effects, or “eustress”.
 
 @Bidwell1979 writes a comprehensive definition as “Normal physiology is maintained under ideal environmental conditions. However, plants seldom exist under just the right conditions. Usually something is lacking; often several factors are far from ideal. Because of the fact of competition, plants often live at the limit of their capacity to survive one or more adverse conditions. This creates considerable stress on the organism, which reacts by various biochemical and physiological mechanisms, to overcome, avoid, or neutralize the stress.” @Levitt1980 defined stress as: “Any environmental factor potentially unfavorable to living organisms.” @Levitt1980 based his proposal for “stress and strain terminology” on the use of these terms in physics. He conceded that the term “strain” as used in biology had a connotation of plastic rather than elastic strain, while he considered both as of interest. He defined in a biological sense stress as “an external factor acting on an organism” and strain as “a physical or chemical change produced by the stress”. He also states that plastic strain may be reparable while elastic strain is reversible. He used the terms “stable adaptation” for adaptation of the genotype through natural selection and “unstable adaptation” for acclimation of the phenotype. He also equated hardiness with the ability to acclimate. Contemporary with Levitt, @Grime1979, @Grime1981 linked stress, resources and disturbances to evolution and natural selection in a classification of plants into competitors, stress tolerators and ruderals (C-S-R) based on the strategies expected to contribute to fitness in environments with differences in resource abundance. We already see multiple views: Bidwell sees stress and ensuing strain as the norm, Levitt sees stress as a rather exceptional case that may cause strain or not, and finally Grime sees stress as a persistent condition in the environment that filters species but does not strain those species that pass the filter.  
 
@@ -45,11 +49,11 @@ Statements indicating that stress is pervasive in nature and that plants’ grow
 
 ## The changing scientific context
 
-Gradually, the purely genetic-based view of evolution [@Fisher1958] has been expanded to encompass other information transfer mechanisms under the name of extended heredity [@Bondurianski2018]. Extended heredity includes mechanisms such as maternal effects and transfer of epigenes, which even if usually persisting only for one or a few generations, are able to influence the outcome of natural selection, and consequently, the course of evolution of the genotype. Horizontal evolution [@Mindell2024] recognizes that the tree-like representation of evolution is incomplete, proposing a network representation to accommodate speciation originating from hybridization and other mechanism of horizontal gene transfer between species.
+Gradually, the purely genetic-based view of evolution [@Fisher1958] has been expanded to encompass other information transfer mechanisms under the name of extended heredity [@Bonduriansky2020]. Extended heredity includes mechanisms such as maternal effects and transfer of epigenes, which even if usually persisting only for one or a few generations, are able to influence the outcome of natural selection, and consequently, the course of evolution of the genotype. Horizontal evolution [@Mindell2024] recognizes that the tree-like representation of evolution is incomplete, proposing a network representation to accommodate speciation originating from hybridization and other mechanism of horizontal gene transfer between species.
 
 Both genotypic and environmental variation play a role in evolution through their effects on the fitness of individuals. However, due to genotypic and environmental variation, that some individuals, or even most individuals in a population are under strain, does not necessarily mean that the population as a whole is under strain or that its capacity for biological resilience is overwhelmed [@Thorogood2023]. That living systems can be described as systems composed of interacting parts organized hierarchically affects how we should approach their study, specially when crossing level-of-organization boundaries [e.g., @Zeiger1970; @Capra2014] so that the conclusions reached are biologically and practically meaningful. However, we see this hierarchy nowadays not as tree-like, but as a network. This is not only true for evolution of species, but also for trophic networks in ecosystems and signalling networks at the cell level. This means that boundaries among levels in the hierarchy can be diffuse.
 
-It is nowadays accepted that information-carrying cues and signals play a crucial role in the regulation of the growth and development of plants [@Smith1981; @Ballare1990; @Aphalo1995; @Aphalo2022]. We have proposed that altered conditions prone to cause strain are not only dependent on the state of individual variables but also on spatially or temporally disrupted correlations among variables in the environment, because organisms have evolved to use such correlations as sources of information, including anticipation of future events or states of their environment [see, @Aphalo2022]. It has also been shown that preemptive or anticipatory responses by organisms, including plants, can be highly beneficial to fitness [@Novoplansk2016] including under exceptional "stressful" conditions. Importantly, such responses could be exploited when managing crops [XXXXXX; @Novoplansky2024]. We now see plants as complex and actively regulated biological systems capable of anticipatory responses rather than as passive systems at the mercy of the environment [@Trewavas2014; XXXX]. In fact, plants “keep a memory” within and across generations about environmental conditions they are exposed to, using multiple mechanisms, allowing memories of varied persistence. Furthermore, communication among plants through, mostly chemical, signals can play a central role in the tolerance of stress and mitigation of strain [@Novoplansky2024].
+It is nowadays accepted that information-carrying cues and signals play a crucial role in the regulation of the growth and development of plants [@Smith1981; @Ballare1990; @Aphalo1995; @Aphalo2022]. We have proposed that altered conditions prone to cause strain are not only dependent on the state of individual variables but also on spatially or temporally disrupted correlations among variables in the environment, because organisms have evolved to use such correlations as sources of information, including anticipation of future events or states of their environment [see, @Aphalo2022]. It has also been shown that preemptive or anticipatory responses by organisms, including plants, can be highly beneficial to fitness [@Novoplansky2016] including under exceptional "stressful" conditions. Importantly, such responses could be exploited when managing crops [XXXXXX; @Novoplansky2024]. We now see plants as complex and actively regulated biological systems capable of anticipatory responses rather than as passive systems at the mercy of the environment [@Trewavas2014; XXXX]. In fact, plants “keep a memory” within and across generations about environmental conditions they are exposed to, using multiple mechanisms, allowing memories of varied persistence. Furthermore, communication among plants through, mostly chemical, signals can play a central role in the tolerance of stress and mitigation of strain [@Novoplansky2024].
 
 Evolutionary mechanisms, in a broad sense, provide the ultimate explanation of why “stress”, in each of its definitions, is or is not a frequent condition in nature. From a modern perspective, how a plant responds to an environmental condition depends not only on the genotype but also on its expression in the phenotype. Crucially, from this perspective, responses depend on the integration of both information and resource availability over a long time and the integration of information across multiple levels of organization, including the sharing of information among individuals. This clashes with the intuitive idea that when a plant is under stress its responses are mainly controlled externally but when plastically acclimating, they are controlled internally.
 
@@ -95,41 +99,6 @@ The success of anticipatory action towards future recurring conditions that are 
 
 ### Levels of organization and interactions
 
-```{mermaid}
-%%{init: {"flowchart": {"htmlLabels": false}} }%%
-flowchart LR
-  A(Levels of<br/>organization) --> B1[Gene expression]
-  A --> B2[Cell]
-  A --> B3[Tissue and organ]
-  A --> B4[Individual]
-  A --> B5[Population]
-  A --> B6[Community]
-  A --> B7[Ecosystem]
-  B1 -.-> B1a[Marker genes]
-  B2 -.-> B2a[ROS]
-  B2 -.-> B2b[Proline, proteins...]
-  B2 -.-> B2c[Plasmolisis]
-  B2 -.-> B23[Osmolites]
-  B3 -.-> B23
-  B3 -.-> B34[Turgor]
-  B4 -.-> B34
-  B4 -.-> B4a[Water potential]
-  B4 -.-> B4b[Fitness]
-  B4 -.-> B4c[Biomass accumulation]
-  B4 -.-> B4d[Yield]
-  B5 -.-> B4c
-  B5 -.-> B4d
-  B5 -.-> B5a[Decrease in size]
-  B6 -.-> B4c
-  B6 -.-> B6a[Biodiversity loss]
-  B7 -.-> B4c
-  B7 -.-> B7a[Primary production]
-  B7 -.-> B7b[Standing biomass]
-  B7 -.-> B7c[Soil degradation]
-  B7 -.-> B7d[Water retention]
-  B7 -.-> B7e[Nutrient retention]
-```
-
 Levels of organization and hierarchical organization of systems are central to contemporary biological thinking [@Wimsatt1976; @Wimsatt1994; @Capra2014; @Sadras2016; Sadras and Richards 2016, @Aphalo2022; Aphalo and Sadras, 2022, @Kauffman2023; Kauffman and Roli 2023, @Thorogood2023].  Compositional levels of organization are defined as hierarchical divisions of biological entities ‘organized by part-whole relations in which wholes at one level function as parts at the next (and all higher) levels’ [@Wimsatt1994]. In the words of @Kauffman2023 “…living things are Kantian wholes where the parts exist in the universe for and by means of the whole.” Because individuals, as Kantian wholes, propagate their offspring, their sustaining parts - lungs and kidneys in mammals – “are also propagated and evolve to function better” [@Kauffman2023]. Levels ‘are constituted by families of entities usually of comparable size and dynamical properties, which characteristically interact primarily with one another’ [@Wimsatt1994]. Notwithstanding cross-level interactions, [@Wimsatt1994] view highlights that molecules interact mostly with molecules [@Rietman2011] and plants with plants [@Harper1977]; this partially accounts for the compartmentalized theories associated with each level. Indeed, processes can be separated into discrete classes by their time constants [@Levins1970]. A physiological perspective challenging the cause-and-effect arrow from genotype to phenotype led to the conclusion that there is no privileged level of organisation and highlighted the importance of downward causation in the construction of the phenotype whereby higher-level properties “necessarily also causes of lower level behaviour, involving actions and interactions both ways” [@Noble2012]. Below we apply these ideas in an attempt to illuminate the concepts of stress, stressor and strain.
 
 As discussed in previous sections, potential and actual stressors in nature are rarely individual environmental factors but instead combinations of factors acting jointly or sequentially. Information acquired by plants through the perception of cues and signals in the environment is combined during transduction [@XXXX]. Acquired information and experienced stress drastically affect future responses to both informational cues and signals, and to potential stressors thanks to changes in readiness to respond and physiological, morphological and developmental acclimation.
@@ -159,6 +128,106 @@ Stressed humans fail to make good decisions or in extreme cases cannot make any 
 
 How the “goodness of a decision” can be formally assessed? For wild plants the criterion for good decision making is long-term fitness, and for crops its contribution to long-term yield, its stability and/or produce quality, i.e., the selection criteria, of natural selection and crop breeding, respectively.
 
+## Measurement of acclimation and strain
+
+The practical measurement or detection of acclimation and stress have been based on the measurement of a large number of different state variables in plants, their parts or their assemblages. This is natural given the complexity of biological systems and the many different potential stressors that can be present in the environment. 
+
+@Selye1975 tells "...the stress syndrome is — by definition — nonspecific in its causation. However, depending upon conditioning factors, which can selectively influence the reactivity of certain organs, the same stressor can elicit different manifestations in different individuals." This view of the _stress syndrome_ is an abstract one. It implies that the _stress syndrome_ abstraction encompasses stress caused by different stressors and mediated by different underlying mechanisms. As the mechanisms involved vary, it is natural that many ways of detecting and measuring stress are in use. As these different approaches can be more or less specific to different underlying mechanisms of stress, the diagnosis or measurements based on them are likely to yield contradictory results. In @fig-indicators-of-stress we list several of the measures used to detect and quantify stress at different levels of organization.
+
+```{mermaid}
+%%| label: fig-indicators-of-stress
+%%| fig-cap: "Diagram showing commonly used indicators of strain at different levels of organization. The rightmost column of boxes shows variables or parameters used to diagnose _strain_ or the existance of stress in plants and their assemblages."
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+  O[[Frequently used<br>_indicators of strain_]] ==> A
+  A(Levels of<br/>organization) --> B1[Gene expression]
+  A --> B2[Cell]
+  A --> B3[Tissue and organ]
+  A --> B4[Individual]
+  A --> B5[Population]
+  A --> B6[Community]
+  A --> B7[Ecosystem]
+  B1 -.-> B1a[Marker genes]
+  B1 -.-> B1b[Marker epigenes]
+  B1 -.-> B1c[Marker small RNA]
+  B2 -.-> B2a[ROS]
+  B2 -.-> B2b[Proline, proteins...]
+  B2 -.-> B2c[Plasmolisis]
+  B2 -.-> B2d[Membrane integrity]
+  B2 -.-> B23a[Osmolites]
+  B2 -.-> B23b[Hormones]
+  B2 -.-> B23c[Specialized metabolites]
+  B3 -.-> B23a
+  B3 -.-> B23b
+  B3 -.-> B23c
+  B3 -.-> B34[Turgor]
+  B4 -.-> B34
+  B4 -.-> B4a[Water potential]
+  B4 -.-> B4b[Fitness]
+  B4 -.-> B4c[Biomass accumulation]
+  B4 -.-> B4d[Yield]
+  B5 -.-> B4c
+  B5 -.-> B4d
+  B5 -.-> B5a[Breeding population size]
+  B6 -.-> B4c
+  B6 -.-> B6b[Competition]
+  B6 -.-> B6a[Biodiversity loss]
+  B7 -.-> B4c
+  B7 -.-> B7a[Primary production]
+  B7 -.-> B7b[Standing biomass]
+  B7 -.-> B7c[Soil degradation]
+  B7 -.-> B7d[Water retention]
+  B7 -.-> B7e[Nutrient retention]
+```
+
+While in many cases the detection or measurement of strain is possible at a single point in time, this is rarely possible for acclimation. The detection of stress-aleviating or stress-preventing acclimation to be reliable requires the observation of a time-course of responses, starting before strain develops. As acclimation implies a cost, distinguishing acclimation from strain and limitation is difficult. At an early stage the criteria that are used for acclimation differ to some extent from those used for stress (@fig-indicators-of-acclimation).
+
+```{mermaid}
+%%| label: fig-indicators-of-acclimation
+%%| fig-cap: "Diagram showing commonly used immediate indicators of acclimation at different levels of organization. The rightmost column of boxes shows variables or parameters used to diagnose _acclimation_ or _the existance of favourable plastic responses in plants and their assemblages."
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+  O[[Frequently used<br>_indicators of acclimation_<br>and/or _plasticity_]] ==> A
+  A(Levels of<br/>organization) --> B1[Gene expression]
+  A --> B2[Cell]
+  A --> B3[Tissue and organ]
+  A --> B4[Individual]
+  A --> B5[Population]
+  A --> B6[Community]
+  B1 -.-> B1a[Marker genes]
+  B1 -.-> B1b[Marker epigenes]
+  B1 -.-> B1c[Marker small RNA]
+  B2 -.-> B2a[Antioxidant capacity]
+  B2 -.-> B2b[Proline, proteins...]
+  B2 -.-> B23a[Osmolites]
+  B2 -.-> B23b[Hormones]
+  B2 -.-> B23c[Specialized metabolites]
+  B3 -.-> B23a
+  B3 -.-> B23b
+  B3 -.-> B23c
+  B4 -.-> B4b[Fitness]
+  B4 -.-> B4e[Yield stability]
+  B4 -.-> B4c[Defenses]
+  B4 -.-> B4d[Biomass allocation]
+  B5 -.-> B4c
+  B5 -.-> B4d
+  B5 -.-> B5a[Communication]
+  B6 -.-> B5a
+  B6 -.-> B6a[Symbioses]
+  B6 -.-> B6b[Competition]
+  B6 -.-> B6c[Facilitation]
+```
+
+To assess is acclimation has been effective in protecting from stress, we assess strain at some point(s) in time after we assume acclimation has become effective by assessing the response to a stressor (@fig-value-of-acclimation).
+
+```{r, echo=FALSE}
+#| label: fig-value-of-acclimation
+#| fig-cap: "Diagram showing the temporal sequence used to assess acclimation efectiveness in the context of stress as parallel time lines for _treatment_ and _control_."
+
+ggplot()
+```
+
+
 ::: callout-note
 # Reaction norms and the quantification of strain
 
@@ -177,7 +246,7 @@ In agriculture, to assess for example the impact of drought at the field-scale, 
 
 As an optimal, non-limiting condition is unlikely in the natural or managed environment, using such a reference is of little practical use to agriculture or ecology [@XXXX; @KoernerXXXX]. Furthermore, the definition of optimal conditions is very difficult: for example silver birch seedlings under continuous light cultivated using aeroponics with nutrient supply proportional to the growth rate can attain a relative growth rate, measured as dry mass, of 27% per day, but such conditions are unlike those in nature [@Agren2012] _(Ågren and Weih, 2012)_.  In practice, the control or reference growing environment is less limiting than the growth-limiting one, but it rarely allows the maximum potential growth rate.
 
-In agriculture the concept of limitation has a clear meaning. For example, fertilisation and irrigation alleviate limitations, often increase crop yield, and have driven much of the sustained increase in global food production over decades [@Sincllair2012] _(Sinclair and Rufty 2012)_. The concept of limitation leads to useful operational definitions in agriculture (Fig. 1). Based on economic analogies, ecological theory predicts that plant growth _efficiency?_ is maximised when all resources are equally limiting [@Bloom1985] _(Bloom et al., 1985)_. This leads to the concept of co-limitation, which is grounded on robust theory and quantitative approaches to frame the empirical evidence [@Bracken2015; @Cossani2018; @Elser2007; @Harpole2011; @Kho2000; @Sperfeld2016]. For example, we have gained insights on the primary production of diverse ecosystems that from the perspective of nitrogen-phosphorus co-limitation and on the seed yield of rainfed crops from the angle of nitrogen-water co-limitation [@Elser2007; @Harpole2011; @Sperfeld2016; @Cossani2018]. Scaling to three or more co-limiting factors remains a challenge [@Cossani2018].
+In agriculture the concept of limitation has a clear meaning. For example, fertilisation and irrigation alleviate limitations, often increase crop yield, and have driven much of the sustained increase in global food production over decades [@Sinclair2012] _(Sinclair and Rufty 2012)_. The concept of limitation leads to useful operational definitions in agriculture (Fig. 1). Based on economic analogies, ecological theory predicts that plant growth _efficiency?_ is maximised when all resources are equally limiting [@Bloom1985] _(Bloom et al., 1985)_. This leads to the concept of co-limitation, which is grounded on robust theory and quantitative approaches to frame the empirical evidence [@Bracken2015; @Cossani2018; @Elser2007; @Harpole2011; @Kho2000; @Sperfeld2016]. For example, we have gained insights on the primary production of diverse ecosystems that from the perspective of nitrogen-phosphorus co-limitation and on the seed yield of rainfed crops from the angle of nitrogen-water co-limitation [@Elser2007; @Harpole2011; @Sperfeld2016; @Cossani2018]. Scaling to three or more co-limiting factors remains a challenge [@Cossani2018].
 
 The usefulness of the concept of limitation  breaks down when considering the ecology and evolution of plant species: “watering the desert, fertilizing the tundra, warming the alpine zone, ... are commonly fatal for the plants living there, creating a completely new assemblage of species, with the former ‘limited’ ones being eliminated” [@Koerner2003]. The concept of limitations or constraints can be applied when considering ecosystem pools and fluxes [e.g., @Chapin2011]. So, usefulness of the concept of limitation depends, as one should expect, on applying it to the system of interest as a whole and its whole environment, rather than to parts within them.
 
@@ -229,21 +298,30 @@ In the field, because of temporal variation, a plant if considered individually 
 
 While damage is being repaired acclimation can continue, and tolerance enhanced. Thus recovery is possible even under continuing exposure to a stressor, that even if continuing to be pressent stops behaving as a stressor. So transit from the resistance phase back to the alarm phase is possible. So we discuss in this section recovery that takes place after the potential stressor disapears and contrast it with the case when repair capacity is insuficient.
 
-Recovery involves repair of damage, but in some cases also compensatory responses. In partly defoliated silver birch sapplings the photosynthetic capacity of the remaining leaves increased by xx% [@vaapavuoriXXXX]. However, in most cases recovery is not complete and fitness or yield are decreased compared to plants that have not been exposed to stress.
+Recovery involves repair of damage, but in some cases also compensatory responses. In partly defoliated silver birch sapplings the photosynthetic capacity of the remaining leaves increased by xx% [@Ovaska1993]. However, in most cases recovery is not complete and fitness or yield are decreased compared to plants that have not been exposed to stress.
 
 Exhaustion hapens if both acclimation and repair are overwhelmed or innefective. A plant dies, leaves no descendence, or yields no commercially valuable produce.
 
 ### States instead of phases
 
-As the phases do not represent necessarily a temporal sequence, we should define them as states of the system. When doing this, it becomes clear that the alarm state is not defined based on the same criterion as the other states, and that the alarm stage can coexist with the other states. This view frees us to consider the dynamics of stress.
+As the _phases_ reviewed above do not represent necessarily a temporal sequence at the individual and lower levels of organization, we redefine them as _transient states_ of the system. By doing this, it becomes clear that the alarm state is not defined based on the same criterion as the other states, and that the alarm state can coexist with the other states. This view frees us to consider the dynamics of stress as dependent on two processes: 1) _prevention_ by anticipated acclimation accompanied by an opportunity cost (@fig-acclimation-control-loop), and 2) _repair_ once strain develops and results in damage (@fig-states-of-stress). 
 
 ```{mermaid}
+%%| label: fig-acclimation-control-loop
+%%| fig-cap: "Diagram describing _acclimation of an individual_ as an adjustment of the developmental strategy in response to cues and signals informative of likely future conditions in the environment."
 flowchart TD
-    a{change<br/>predicted?} -->|Yes| B(Alarm state<br/>_inadecuate strategy_)
-    A(No alarm state<br/>_adecuate strategy_) --> a
+    a{change<br/>predicted?} -->|Yes| B(Alarm state<br/>_adjust strategy_)
+    A(No alarm state<br/>_sustain strategy_) --> a
     a -->|No| A
-    I1[[_External and internal_<br/>cues and signals]] -.-> a
+    I1[[_External and internal_<br/>cues and signals]] -.-> c((memory and<br>integration))
+    c --> a
     B --> a
+```
+
+```{mermaid}
+%%| label: fig-states-of-stress
+%%| fig-cap: "Diagram describing the _state of an individual plant_ based on the balance between rate of damage production and rate of damage repair. These states in most cases alternate during the course of a day and from day to day in a naturally fluctuating environment."
+flowchart TD
     I2[[_Internal condition_<br/>metabolism]] -.-> b
     b{Damage is...?} -->|Present and decreasing| E(Recovery state<br/>_repair > damage_)
     b -->|Present and stable| C(Resistance state<br/>_repair = damage_)
@@ -254,6 +332,8 @@ flowchart TD
     E --> b
     F --> b
 ```
+
+These two processes can coexist as strain can be a source of information complementing the perception of the state of the environment.
 
 ## Plant stress as a system
 

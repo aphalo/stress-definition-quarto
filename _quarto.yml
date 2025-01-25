@@ -1,5 +1,5 @@
 project:
-  type: manuscript
+  type: website
 
 manuscript:
   article: index.qmd
