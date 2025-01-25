@@ -95,6 +95,41 @@ The success of anticipatory action towards future recurring conditions that are 
 
 ### Levels of organization and interactions
 
+```{mermaid}
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+  A(Levels of<br/>organization) --> B1[Gene expression]
+  A --> B2[Cell]
+  A --> B3[Tissue and organ]
+  A --> B4[Individual]
+  A --> B5[Population]
+  A --> B6[Community]
+  A --> B7[Ecosystem]
+  B1 -.-> B1a[Marker genes]
+  B2 -.-> B2a[ROS]
+  B2 -.-> B2b[Proline, proteins...]
+  B2 -.-> B2c[Plasmolisis]
+  B2 -.-> B23[Osmolites]
+  B3 -.-> B23
+  B3 -.-> B34[Turgor]
+  B4 -.-> B34
+  B4 -.-> B4a[Water potential]
+  B4 -.-> B4b[Fitness]
+  B4 -.-> B4c[Biomass accumulation]
+  B4 -.-> B4d[Yield]
+  B5 -.-> B4c
+  B5 -.-> B4d
+  B5 -.-> B5a[Decrease in size]
+  B6 -.-> B4c
+  B6 -.-> B6a[Biodiversity loss]
+  B7 -.-> B4c
+  B7 -.-> B7a[Primary production]
+  B7 -.-> B7b[Standing biomass]
+  B7 -.-> B7c[Soil degradation]
+  B7 -.-> B7d[Water retention]
+  B7 -.-> B7e[Nutrient retention]
+```
+
 Levels of organization and hierarchical organization of systems are central to contemporary biological thinking [@Wimsatt1976; @Wimsatt1994; @Capra2014; @Sadras2016; Sadras and Richards 2016, @Aphalo2022; Aphalo and Sadras, 2022, @Kauffman2023; Kauffman and Roli 2023, @Thorogood2023].  Compositional levels of organization are defined as hierarchical divisions of biological entities ‘organized by part-whole relations in which wholes at one level function as parts at the next (and all higher) levels’ [@Wimsatt1994]. In the words of @Kauffman2023 “…living things are Kantian wholes where the parts exist in the universe for and by means of the whole.” Because individuals, as Kantian wholes, propagate their offspring, their sustaining parts - lungs and kidneys in mammals – “are also propagated and evolve to function better” [@Kauffman2023]. Levels ‘are constituted by families of entities usually of comparable size and dynamical properties, which characteristically interact primarily with one another’ [@Wimsatt1994]. Notwithstanding cross-level interactions, [@Wimsatt1994] view highlights that molecules interact mostly with molecules [@Rietman2011] and plants with plants [@Harper1977]; this partially accounts for the compartmentalized theories associated with each level. Indeed, processes can be separated into discrete classes by their time constants [@Levins1970]. A physiological perspective challenging the cause-and-effect arrow from genotype to phenotype led to the conclusion that there is no privileged level of organisation and highlighted the importance of downward causation in the construction of the phenotype whereby higher-level properties “necessarily also causes of lower level behaviour, involving actions and interactions both ways” [@Noble2012]. Below we apply these ideas in an attempt to illuminate the concepts of stress, stressor and strain.
 
 As discussed in previous sections, potential and actual stressors in nature are rarely individual environmental factors but instead combinations of factors acting jointly or sequentially. Information acquired by plants through the perception of cues and signals in the environment is combined during transduction [@XXXX]. Acquired information and experienced stress drastically affect future responses to both informational cues and signals, and to potential stressors thanks to changes in readiness to respond and physiological, morphological and developmental acclimation.
