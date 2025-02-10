@@ -129,7 +129,32 @@ They have yet to incorporate the degree of complexity that nowadays is considere
 The failures inflicted by the underlying complexity on naïve attempts of upscaling of physiological plant responses to higher levels of organization provide painful examples [@Sadras2020; @Thorogood2023] showing that more of the existing complexity needs to be incorporated into “stress” theory.
 Below we analyse the relevance of these advances to the problem of plant stress, even asking the question of whether it is possible or not to cleanly distinguish acclimation from strain responses.
 
-## The factors behind strain and stress tolerance
+## Abstract and operational definitions
+
+Definitions that assume that an environmental condition affording optimal fitness or yield exists and is known, must be considered as abstract. Definitions that do not specify the reference condition, like stress defined as "any environmental condition that reduces the rate of production of biomass”, are also abstract. They describe a concept, but cannot be directly mapped to the study of the real world.
+
+To study stress experimentally we need an operational definition, something we can actually observe and study. For this we need to define a reference condition that exists and that can be diagnosed or measured. There is no agreement in what this reference condition should be, and there is no reason for such an agreement to exist. Stress is an abstraction that can be applied to the study and description of different phenomena. Thus, stress in the real world comprises many different stresses that differ in the environmental condition used as reference. In most cases in practice we compare environmental conditions that cause stress but differ in their strength or nature.
+
+An operational definition also requires a procedure to assess the presence or not of stress. Seeking a binary outcome for the assessment gets us into major difficulties, unless the diagnose procedure is based on a binary outcome like alive vs. dead. In practice stress is in most cases based on the measurement of a continuous variable. Even differences in gene expression are quantitative even if frequently described as binary outcomes based on false discovery rate or other statistical procedures. In some cases like crop yield the measured variable is the target of interest while in other cases one or more proxy variables may be measured in a study. An example of a proxy is the expression of a gene annotated as related to stress based on a meta analysis of results from published prior research.
+
+Physiological, ecological and agronomic definitions of stress are more specific about the variable(s) used to assess the existence of stress, but remain abstract in not specifying the reference condition used.
+
+Even though abstract definitions are useful for the construction of narrative explanations and help conceptual understanding, they cannot be applied directly to the study of actual cases of stress as they may occur in the real world.
+
+## Stress as the outcome of an interaction
+
+In what follow, by "state of the environment" we mean a certain combination of states of multiple variables. The response of a biological system to a single variable is undefined unless we consider it in the context of the state of all other relevant variables in the environment.
+
+A potential stressor becomes an actual stressor when a plant or other target system is strained by it. An interaction always takes place while depending on the outcome we diagnose the existence of stress, either as a binary or a quantitative value. A key difficulty is that the interaction between a biological system and its environment is not instantaneous, it depends on preceding events both in the environment and in the plant, population, etc. 
+
+For some variables used to assess stress, such as number of viable seeds produced, there is a clear point in time when the assessment is to be done. In other cases like gene transcript abundance, ROS, antioxidant capacity, standing biomass, etc., there is no obvious best time point for assessing the outcome. In the later case, different time points for assessment of stress can yield inconsistent outcomes.
+
+In reality a potential stressor is the _time course_ of the state of the environment, not the state of the environment at a specific point in time. This is because the phenotype, and epigenome of a plant depend on previously experienced states of the environment, and the outcome of the interaction of the plant the with the current state of the environment depends on them.
+
+The response of a plant to a potential stressor is a syndrome of a very large number of normally tightly coordinated physiological and developmental responses. (Add Kaufman and Roli's ideas).
+
+## Levels of organization
+
 
 ### Time and space
 
